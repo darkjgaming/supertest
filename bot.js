@@ -63,10 +63,10 @@ bot.on("message", async message => {
 });
 bot.registry
     .registerDefaultTypes()
-    .registerGroups([
+    .registerGroups(
         ["mod","Moderation"],
         ["botowner", "Bot Devs"]
-    ])
+    )
     .registerDefaultGroups()
     .registerDefaultCommands({
         help: false,
