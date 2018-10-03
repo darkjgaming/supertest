@@ -36,7 +36,7 @@ bot.on("message", async message => {
     let log = message.guild.channels.find(c => c.name === "test");
     if (message.channel.id === "405691443961790474") {
         message.delete().catch()
-        if (message.content.toLowerCase().includes("secretcode") {
+        if (message.content.toLowerCase() === "The first clue here") {
             message.delete().catch()
             let embed = new Discord.RichEmbed()
             .setColor(`GREEN`)
@@ -45,7 +45,7 @@ bot.on("message", async message => {
             .setTimestamp()
             .setTitle(`Solved Clue 1`)
             log.send(embed)
-            message.author.send(`Congrats you have figured out clue one nHere is clue two Some clue here`)
+            message.author.send(`Congrats you have figured out clue one and Here is clue two [Some clue here]`)
         }else 
         if (message.content.toLowerCase().includes("test")) {
         message.delete().catch()
